@@ -1,4 +1,4 @@
-
+import { Toaster } from "@/components/ui/toaster"
 import { Route, Routes } from 'react-router-dom';
 import './globals.css'; // Make sure this is imported
 import SignupForm from './_auth/forms/SignupForm';
@@ -20,6 +20,7 @@ function App() {
         </Route>
       </Routes>
 
+      <Toaster />
     </main>
   );
 }
