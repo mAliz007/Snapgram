@@ -1,3 +1,4 @@
+
 import { useNavigate } from "react-router-dom";
 import { createContext, useContext, useEffect, useState } from "react";
 
@@ -69,7 +70,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     const cookieFallback = localStorage.getItem("cookieFallback");
     if (
-      cookieFallback === "[]"
+      cookieFallback === "[]" 
     ) {
       navigate("/sign-in");
     }
