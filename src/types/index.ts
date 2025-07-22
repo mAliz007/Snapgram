@@ -1,5 +1,4 @@
 import React from "react";
-import { Url } from "url";
 
 export type INavLink = {
   imgURL: string;
@@ -39,7 +38,7 @@ export type IUser = {
   name: string;
   username: string;
   email: string;
-  imageUrl?: Url;
+  imageUrl: string;
   bio?: string;
 };
 
