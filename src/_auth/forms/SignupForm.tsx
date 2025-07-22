@@ -33,8 +33,7 @@ const SignupForm = () => {
   const { mutateAsync: signInAccount, isPending: isSigningInUser } = useSignInAccount();
 
 
-  const wait = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
-
+  
   // Handler
   const handleSignup = async (user: z.infer<typeof SignupValidation>) => {
     try {
@@ -45,8 +44,7 @@ const SignupForm = () => {
         
         return;
       }
-      const wait = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
-
+      
       const session = await signInAccount({
         email: user.email,
         password: user.password,

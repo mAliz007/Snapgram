@@ -74,10 +74,12 @@ const PostDetails = () => {
               </ul>
             </div>
             
-            <div className="w-full">
-              <PostStats post={post} userId={user.id}/>
+           {post && user?.id && (
+  <div className="w-full">
+    <PostStats post={post} userId={user.id} />
+  </div>
+)}
 
-            </div>
           </div>
         </div>
       )}

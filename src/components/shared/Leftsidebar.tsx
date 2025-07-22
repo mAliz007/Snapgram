@@ -2,7 +2,7 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Button } from "../ui/button";
 import { useSignOutAccount } from "@/lib/react-query/queriesAndMutations";
-import { use, useEffect } from "react";
+import {  useEffect } from "react";
 import { useUserContext } from "@/context/AuthContext";
 import { NavLink } from "react-router-dom";
 import { sidebarLinks } from "@/_root/constants";
